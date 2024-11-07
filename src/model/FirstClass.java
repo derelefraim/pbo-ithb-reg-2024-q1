@@ -1,10 +1,10 @@
 package model;
 
 public class FirstClass extends Tiket {
-    int asuransi;
+    private int asuransi;
 
-    public FirstClass(int jarakTempuh, int bagasi, int asuransi) {
-        super(jarakTempuh, bagasi);
+    public FirstClass(int jarakTempuh, int bagasi, int harga, int asuransi) {
+        super(jarakTempuh, bagasi, harga);
         this.asuransi = asuransi;
     }
 
@@ -14,5 +14,8 @@ public class FirstClass extends Tiket {
 
     public void setAsuransi(int asuransi) {
         this.asuransi = asuransi;
+    }
+    public void sapa(){
+        System.out.println("Selamat Datang di First Class");
     }
 }
